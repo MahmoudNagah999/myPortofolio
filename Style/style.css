@@ -431,12 +431,15 @@ span{
     color: var(--text-color-secondary);
     margin-bottom: 1rem;
     text-decoration: underline;
+    text-align: top;
 }
 
 .skills-box ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .skills-box ul li {
@@ -464,6 +467,26 @@ span{
     color: var(--text-color);
     font-size: 1.2rem;
     margin: 0.5rem 0.5rem 0.5rem 0;
+
+    min-height: 100px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keeps content aligned at the top */
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap if necessary */
+    gap: 1rem; /* Adds spacing between categories */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Equal widths */
+    align-items: start; /* Vertically aligns all content */
+}
+
+.skills-category h4 {
+    margin: 0; /* Remove any margin for consistency */
+    flex-shrink: 0; /* Prevent shrinking if content overflows */
 }
 
 
