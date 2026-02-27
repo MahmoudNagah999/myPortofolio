@@ -190,7 +190,6 @@ span{
     margin: 2rem 0 3rem;
 }
 
-
 .about-details {
     display: flex;
     flex-wrap: wrap;
@@ -217,68 +216,6 @@ span{
     color: var(--text-color);
     text-decoration: underline;
 }
-
-/* .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-} */
-
-
-/* .services h2{
-    margin-bottom: 5rem;
-}
-
-.services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-bottom: 2rem;
-}
-
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background: var(--snd-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
-    min-height: 400px;
-    min-width: 300px;
-    
-}
-
-.services-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
-}
-
-.services-box i{
-    font-size: 7rem;
-    color: var(--main-color);
-}
-
-.services-box h3{
-    font-size: 2.6rem;
-}
-
-.services-box p{
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-} */
 
 /* Resume Section */
 
@@ -307,11 +244,6 @@ span{
     transition: 0.3s ease;
     width: 95%;
 }
-
-/* .education-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.05);
-} */
 
 .education-box i {
     font-size: 4rem;
@@ -424,12 +356,6 @@ span{
     flex: 1 1 25rem;
 }
 
-/* .skills-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-} */
-
 .skills-box h3 {
     font-size: 2.4rem;
     color: var(--text-color);
@@ -498,7 +424,6 @@ span{
     margin: 0; /* Remove any margin for consistency */
     flex-shrink: 0; /* Prevent shrinking if content overflows */
 }
-
 
 .portofolio{
     background: var(--snd-bg-color);
