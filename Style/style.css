@@ -208,7 +208,17 @@ span{
     line-height: 1.5;
 }
 
-.btn {
+.about-details a {
+    color: var(--main-color);
+    transition: 0.3s ease;
+}
+
+.about-details a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
@@ -222,7 +232,7 @@ span{
 
 .btn:hover {
     background-color: #0056b3;
-}
+} */
 
 
 /* .services h2{
