@@ -3,271 +3,670 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Nagah is a Senior Backend Engineer specializing in PHP, Laravel, REST APIs, MySQL, backend architecture, security, performance, and scalable backend systems.">
+    <meta name="keywords" content="Senior Backend Engineer, PHP, Laravel, REST APIs, MySQL, Backend Architecture, JWT, PHPUnit, Pest, Clean Code, SOLID">
+    <meta name="author" content="Mahmoud Nagah">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mahmoudnagah999.github.io/myPortofolio/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahmoudnagah999.github.io/myPortofolio/">
+    <meta property="og:title" content="Mahmoud Nagah | Senior Backend Engineer | PHP & Laravel">
+    <meta property="og:description" content="Senior Backend Engineer specializing in PHP/Laravel, with 4+ years of experience building and maintaining production SaaS and enterprise systems, REST APIs, secure backend workflows, and complex business logic.">
+    <meta property="og:image" content="https://mahmoudnagah999.github.io/myPortofolio/Imgs/home_img.jpg">
+    <meta property="og:site_name" content="Mahmoud Nagah Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mahmoudnagah999.github.io/myPortofolio/">
+    <meta property="twitter:title" content="Mahmoud Nagah | Senior Backend Engineer | PHP & Laravel">
+    <meta property="twitter:description" content="Senior Backend Engineer specializing in PHP/Laravel, with 4+ years of experience building production SaaS and enterprise systems.">
+    <meta property="twitter:image" content="https://mahmoudnagah999.github.io/myPortofolio/Imgs/home_img.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mahmoud Nagah",
+        "jobTitle": "Senior Backend Engineer",
+        "url": "https://mahmoudnagah999.github.io/myPortofolio/",
+        "sameAs": [
+            "https://linkedin.com/in/mahmoud-nagah-mn999/",
+            "https://github.com/MahmoudNagah999"
+        ],
+        "knowsAbout": ["PHP", "Laravel", "REST APIs", "MySQL", "Backend Architecture", "JWT", "PHPUnit", "Pest"]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="Imgs/home_img.jpg">
+    
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Main Css -->
     <link rel="stylesheet" href="Style/style.css">
-    <title>Mahmoud Nagah Portfolio</title>
+    <title>Mahmoud Nagah | Senior Backend Engineer | PHP & Laravel</title>
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header">
-        <a href="#" class="logo"><span>Mahmoud Nagah</span></a>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <header class="header" role="banner">
+        <a href="#home" class="logo" aria-label="Mahmoud Nagah - Home"><span>Mahmoud Nagah</span></a>
+        <button class="menu-toggle" id="menu-icon" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-        <nav class="navbar">
-            <a href="#home" class="Active">Home</a>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-            <!-- <a href="#projects">Projects</a> -->
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="myCV/Mahmoud%20Nagah%20Cv.pdf" class="btn btn-nav" download="Mahmoud_Nagah_CV.pdf" aria-label="Download CV (PDF)">
+                <i class="fa-solid fa-download"></i> CV
+            </a>
         </nav>
     </header>
 
-    <!-- Header Section -->
-    <section class="home" id="home">
+    <!-- Hero Section -->
+    <section class="home" id="home" aria-labelledby="hero-title">
        <div class="home-content">
-            <h1>Mahmoud Nagah</h1>
-            <h3>I'm <span class="multiple-text"></span></h3>
-            <p>Laravel Backend Engineer with 4+ years building scalable applications.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100007085612749&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/mahmoud_nag7" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/mahmoudnagah999/profilecard/?igsh=ZXI1bGFxcHR3aTgz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mahmoud-nagah-mn999?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:mahmoudnagah999gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <p class="hero-eyebrow">Senior Backend Engineer · 4+ Years Experience</p>
+            <h1 id="hero-title">Mahmoud Nagah</h1>
+            <h2 class="hero-headline">PHP &amp; Laravel · REST APIs · MySQL · Scalable Backend Systems</h2>
+            <p class="hero-description">
+                Senior Backend Engineer specializing in PHP/Laravel, with 4+ years of experience building and maintaining production SaaS and enterprise systems, REST APIs, secure backend workflows, and complex business logic.
+            </p>
             
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fa-solid fa-diagram-project"></i> View Projects
+                </a>
+                <a href="myCV/Mahmoud%20Nagah%20Cv.pdf" class="btn btn-secondary" download="Mahmoud_Nagah_CV.pdf" aria-label="Download CV (PDF)">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
             </div>
-            <a href="myCv/Mahmoud_Nagah_CV.pdf" class="btn" download="Mahmoud_Nagah_CV">Download CV <i class="fa-solid fa-download"></i></a>
-
+            
+            <div class="social-media" aria-label="Professional links">
+                <a href="https://linkedin.com/in/mahmoud-nagah-mn999/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/MahmoudNagah999" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:MahmoudNagah999@gmail.com" aria-label="Send Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
        </div>
-       <div class="home-img">
-            <img src="Imgs/home_img.jpg" alt="Mahmoud Nagah"> 
+       <div class="home-img" aria-hidden="true">
+            <img src="Imgs/home_img.jpg" alt="Mahmoud Nagah - Senior Backend Engineer" loading="eager"> 
        </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="about" id="about" aria-labelledby="about-title">
         <div class="about-img">
-            <img src="Imgs/about_img.png" alt="Mahmoud Nagah"> 
+            <img src="Imgs/about_img.png" alt="Mahmoud Nagah - Senior Backend Engineer" loading="lazy"> 
         </div>
     
         <div class="about-content">
-            <h2 class="heading">
+            <h2 class="heading" id="about-title">
                 About <span>Me</span>
             </h2>
-            <h3>Software Engineer</h3>
+            <h3>Senior Backend Engineer</h3>
             <p>
-                Backend Engineer with 4+ years of experience designing and maintaining enterprise-grade Laravel applications, including live ERP and school management systems. Experienced in Service Layer architecture, RESTful API development, and role-based access control (RBAC). Strong focus on performance optimization, clean architecture, and refactoring legacy systems to build maintainable and efficient backend solutions.
+                I'm a Senior Backend Engineer specializing in PHP and Laravel, with 4+ years of experience building and maintaining production SaaS and enterprise systems.
             </p>
+            <p>
+                My experience includes designing REST APIs, backend architecture, authentication and authorization systems, database optimization, complex business workflows, and legacy code refactoring.
+            </p>
+            <p>
+                I've worked on systems supporting multiple dashboards and mobile applications, collaborating closely with frontend, mobile, QA, and business teams.
+            </p>
+            
+            <div class="about-highlights" aria-label="Core strengths">
+                <span class="tech-badge tech-badge-primary"><i class="fa-solid fa-layer-group"></i> Backend Architecture</span>
+                <span class="tech-badge tech-badge-primary"><i class="fa-solid fa-code"></i> REST API Development</span>
+                <span class="tech-badge tech-badge-primary"><i class="fa-solid fa-shield-halved"></i> Authentication &amp; Authorization</span>
+                <span class="tech-badge tech-badge-primary"><i class="fa-solid fa-database"></i> Database &amp; Query Optimization</span>
+                <span class="tech-badge tech-badge-secondary"><i class="fa-solid fa-lock"></i> Security</span>
+                <span class="tech-badge tech-badge-secondary"><i class="fa-solid fa-wrench"></i> Legacy Refactoring</span>
+                <span class="tech-badge tech-badge-secondary"><i class="fa-solid fa-cubes"></i> Clean Code &amp; SOLID</span>
+                <span class="tech-badge tech-badge-secondary"><i class="fa-solid fa-vial"></i> Automated Testing</span>
+            </div>
+
             <div class="about-details">
                 <div>
-                    <p><strong><span>Gmail:</span></strong> <a href="mailto:MahmoudNagah999@gmail.com">MahmoudNagah999@gmail.com</a></p>
-                    <p><strong><span>GitHub:</span></strong> <a href="https://github.com/MahmoudNagah999" target="_blank">MahmoudNagah999</a></p>
-                    <p><strong><span>LinkedIn:</span></strong> <a href="https://www.linkedin.com/in/mahmoud-nagah-mn999?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mahmoud Nagah</a></p>
-                    <p><strong><span>Phone:</span></strong> (+20) 01142036896 / (+20) 01556882998</p>
-                    <p><strong><span>Location:</span></strong> Egypt, Cairo, Bader City</p>
+                    <p><strong><span>Email:</span></strong> <a href="mailto:MahmoudNagah999@gmail.com">MahmoudNagah999@gmail.com</a></p>
+                    <p><strong><span>GitHub:</span></strong> <a href="https://github.com/MahmoudNagah999" target="_blank" rel="noopener noreferrer">MahmoudNagah999</a></p>
+                    <p><strong><span>LinkedIn:</span></strong> <a href="https://linkedin.com/in/mahmoud-nagah-mn999/" target="_blank" rel="noopener noreferrer">Mahmoud Nagah</a></p>
+                    <p><strong><span>Location:</span></strong> Egypt</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Resume Section -->
-    <section class="resume" id="resume">
-        <h2 class="heading">Resume</h2>
-    
-        <!-- Education Section -->
+    <!-- Experience Section -->
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+        <h2 class="heading" id="experience-title">Work <span>Experience</span></h2>
+
+        <!-- Education -->
         <div class="education-container">
             <div class="education-box">
-                
-                <h3><i class="fa-solid fa-graduation-cap"></i>Education</h3>
-                <p>Bachelor’s Degree in Computers and Artificial Intelligence (Helwan University - January 2021)</p>
+                <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <p>Bachelor's Degree in Computers and Artificial Intelligence — Helwan University (January 2021)</p>
             </div>
         </div>
-    
-        <!-- Work Experience Timeline -->
+
+        <!-- Timeline -->
         <div class="timeline-container">
-            <h2 class="subheading">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">July 2025 - Present</div>
+            <h2 class="subheading">Professional Experience</h2>
+            <div class="timeline" role="list">
+                <!-- Restart Technology -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">Jul 2025 — Oct 2026</div>
                     <div class="timeline-content">
                         <h3>Restart Technology</h3>
-                        <p><em> Backend Engineer</em></p>
-                        <p>
-                            Contribute to the maintenance and scaling of a complex school management system built using a Service Layer architecture. 
-                            Design and implement scalable RESTful APIs for two mobile applications, ensuring reliability and clean integration with frontend and mobile teams. 
-                            Refactor legacy modules to reduce technical debt and improve maintainability, readability, and long-term stability. 
-                            Implement and extend Role-Based Access Control (RBAC) mechanisms to enforce granular permissions across multiple user roles. Diagnose and resolve production-level issues while optimizing queries and application workflows to improve performance. 
-                        </p>
+                        <p class="timeline-role"><em>Senior Backend Engineer</em> · Laam — School Management SaaS</p>
+                        <ul class="timeline-list">
+                            <li>Built and maintained REST APIs supporting 3 web dashboards and 2 mobile applications.</li>
+                            <li>Owned backend development for Administrative and Parent mobile apps and Teacher Dashboard.</li>
+                            <li>Implemented authentication and authorization workflows with JWT and Spatie Permission.</li>
+                            <li>Improved API security, input validation, and access control.</li>
+                            <li>Investigated and resolved production issues: application logic, database behavior, APIs, and data consistency.</li>
+                            <li>Optimized database queries and backend operations.</li>
+                            <li>Refactored legacy code and reduced technical debt.</li>
+                            <li>Built background jobs with Laravel Queues and data imports with Laravel Excel.</li>
+                            <li>Added and maintained automated tests using PHPUnit and Pest.</li>
+                            <li>Collaborated cross-functionally with frontend, mobile, QA, and business teams.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel 10</span>
+                            <span class="tech-badge tech-badge-core">MySQL</span>
+                            <span class="tech-badge">JWT</span>
+                            <span class="tech-badge">Spatie Permission</span>
+                            <span class="tech-badge">REST APIs</span>
+                            <span class="tech-badge">PHPUnit</span>
+                            <span class="tech-badge">Pest</span>
+                            <span class="tech-badge">Laravel Queues</span>
+                            <span class="tech-badge">Laravel Excel</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">September 2024 -  June 2025</div>
+                <!-- Next & Associates -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">Sep 2024 — Jun 2025</div>
                     <div class="timeline-content">
                         <h3>Next & Associates</h3>
-                        <p><em>Software Engineer</em></p>
-                        <p>
-                            Designed and developed Laravel-based web applications, managing backend architecture and deployment preparation. 
-                            Contributed to the backend development of FilmSA platform, implementing a modular CMS structure and secure role-based access control system. 
-                            Architected and built Daem, a stock market and investment platform, integrating Python (Flask) services for financial data scraping and processing. 
-                            Utilized PostgreSQL for structured and scalable relational data modeling. 
-                            Integrated external APIs (yfinance) to retrieve financial market data and support analytical features. 
-                            Optimized database queries and application logic to enhance maintainability and system efficiency. 
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">September 2023 - September 2024</div>
-                    <div class="timeline-content">
-                        <h3>Etolv</h3>
-                        <p><em>Backend Developer</em></p>
-                        <p>
-                            Maintained and enhanced a live enterprise ERP system utilized by 100+ departments and serving 5000+ active users. 
-                            Designed and implemented 3+ core ERP modules following a Service Layer architecture to ensure separation of concerns and system scalability. 
-                            Implemented and extended Role-Based Access Control (RBAC) mechanisms across multiple departments and roles. 
-                            Modeled complex business relationships using Neo4j (graph database) to optimize highly interconnected data structures. 
-                            Diagnosed and resolved production issues, ensuring high system reliability and operational stability. 
-                            Optimized database queries and workflows to improve overall system performance and efficiency.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">January 2021 - November 2021</div>
-                    <div class="timeline-content">
-                        <h3>Clavis BS</h3>
-                        <p><em>Software Engineer</em></p>
-                        <p>Contributed to Laravel-based projects, focusing on software design, MySQL database management, and performance optimization. Enhanced the CRM system with innovative features, collaborating with teams to deliver robust solutions.</p>
+                        <p class="timeline-role"><em>Software Engineer</em> · FilmSA</p>
+                        <ul class="timeline-list">
+                            <li>Primarily responsible for CMS development — contributed 60%+ of the CMS implementation.</li>
+                            <li>Recommended and used Filament for CRUD-oriented CMS functionality.</li>
+                            <li>Contributed to the main dashboard development.</li>
+                            <li>Worked with Laravel, Service Pattern, and authentication systems.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel</span>
+                            <span class="tech-badge">Filament</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Service Pattern</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">October 2020 - December 2020</div>
+                <!-- ETOLV -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">Sep 2023 — Sep 2024</div>
                     <div class="timeline-content">
-                        <h3>Clavis BS</h3>
-                        <p><em>Software Engineer (Internship)</em></p>
-                        <p>Contributed to the development of a new project using the Laravel framework, focusing on designing and implementing key software solutions as part of a collaborative team. Managed MySQL databases, optimized performance, and assisted in unit testing to ensure high code quality and system reliability, delivering an efficient and well-structured application.</p>
+                        <h3>ETOLV</h3>
+                        <p class="timeline-role"><em>Backend Developer</em> · Tourism ERP (100+ departments, 5,000+ end users)</p>
+                        <ul class="timeline-list">
+                            <li>Worked with Laravel/Lumen backend on a production ERP system.</li>
+                            <li>Worked directly with Neo4j — wrote Cypher queries for graph data modeling.</li>
+                            <li>Applied Service Layer architecture across modules.</li>
+                            <li>Implemented roles and permissions system.</li>
+                            <li>Built the Massar Hajj module from scratch.</li>
+                            <li>Translated business requirements into backend functionality.</li>
+                            <li>Implemented Hajj trip booking workflows.</li>
+                            <li>Implemented company Hajj and Umrah balance tracking.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel / Lumen</span>
+                            <span class="tech-badge">Neo4j</span>
+                            <span class="tech-badge">Cypher</span>
+                            <span class="tech-badge">Service Layer</span>
+                            <span class="tech-badge">Roles & Permissions</span>
+                        </div>
                     </div>
                 </div>
+                <!-- DAEM -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">—</div>
+                    <div class="timeline-content">
+                        <h3>DAEM</h3>
+                        <p class="timeline-role"><em>Backend Development</em> · Saudi Stock-Market Platform</p>
+                        <ul class="timeline-list">
+                            <li>Laravel backend development for Saudi stock-market platform.</li>
+                            <li>Built Python/Flask services for scraping and data integration.</li>
+                            <li>Integrated yfinance for market data retrieval.</li>
+                            <li>PostgreSQL data modeling and financial data processing.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">yfinance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ClAVIS BS - PHP Developer -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">Mar 2021 — Nov 2021</div>
+                    <div class="timeline-content">
+                        <h3>ClAVIS BS</h3>
+                        <p class="timeline-role"><em>PHP Developer</em></p>
+                        <ul class="timeline-list">
+                            <li>PHP/Laravel development.</li>
+                            <li>Vtiger CRM customization for a large social/sports club.</li>
+                            <li>Built CRM workflows and solutions.</li>
+                            <li>WordPress development where required.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel</span>
+                            <span class="tech-badge">Vtiger CRM</span>
+                            <span class="tech-badge">WordPress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ClAVIS BS - Laravel Intern -->
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-date">Jan 2021 — Mar 2021</div>
+                    <div class="timeline-content">
+                        <h3>ClAVIS BS</h3>
+                        <p class="timeline-role"><em>Laravel Intern</em></p>
+                        <ul class="timeline-list">
+                            <li>Laravel development internship.</li>
+                            <li>PHP/Laravel fundamentals and CRM exposure.</li>
+                            <li>Progressed to PHP Developer role after 3 months.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge tech-badge-core">PHP</span>
+                            <span class="tech-badge tech-badge-core">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    
-        <!-- Skills Section -->
-        <div class="skills-container">
-            <div class="skills-box">
-                <h2 class="subheading">Skills</h2>
-                <!-- <h3>Technical Skills</h3> -->
-                <div class="skills-content">
-                    <div class="skills-category">
-                        <h4>Backend</h4>
-                        <ul>
-                            <li>PHP (Laravel, Filament)</li>
-                            <li>Python (Flask)</li>
-                            <li>RESTful API Development</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Architecture & Design</h4>
-                        <ul>
-                            <li>Service Layer Architecture</li>
-                            <li>SOLID Principles</li>
-                            <li>OOP</li>
-                            <li>Design Patterns</li>
-                            <li>MVC Architecture</li>
-                            <li>Clean Code</li>
-                            <li>Role-Based Access Control (RBAC) </li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Databases</h4>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                            <li>Neo4J</li>
-                            <li>Database Optimization & Indexing</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>DevOps & Deployment</h4>
-                        <ul>
-                            <li>Docker (Basic)</li>
-                            <li>CI/CD pipelines</li>
-                            <li>Jenkins</li>
-                        </ul>
-                    </div>
-                    <div class="skills-category">
-                        <h4>Frontend(Working Knowledge)</h4>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="heading" id="skills-title">Technical <span>Skills</span></h2>
+
+        <div class="skills-grid">
+
+            <!-- Backend - Emphasized -->
+            <div class="skills-card skills-card-core">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge tech-badge-lg tech-badge-core">PHP</span>
+                    <span class="tech-badge tech-badge-lg tech-badge-core">Laravel</span>
+                    <span class="tech-badge tech-badge-lg tech-badge-core">REST APIs</span>
+                    <span class="tech-badge tech-badge-lg tech-badge-core">MySQL</span>
+                    <span class="tech-badge">Backend Architecture</span>
+                    <span class="tech-badge">Service Layer</span>
+                    <span class="tech-badge">Modular Architecture</span>
                 </div>
             </div>
+
+            <!-- Security -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Security</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge">Authentication</span>
+                    <span class="tech-badge">Authorization</span>
+                    <span class="tech-badge tech-badge-core">JWT</span>
+                    <span class="tech-badge">RBAC</span>
+                    <span class="tech-badge">API Security</span>
+                    <span class="tech-badge">Input Validation</span>
+                </div>
+            </div>
+
+            <!-- Engineering -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Engineering</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge">Clean Code</span>
+                    <span class="tech-badge">SOLID</span>
+                    <span class="tech-badge">Design Patterns</span>
+                    <span class="tech-badge">Legacy Refactoring</span>
+                    <span class="tech-badge">Query Optimization</span>
+                    <span class="tech-badge">Database Design</span>
+                </div>
+            </div>
+
+            <!-- Testing -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-vial-circle-check"></i>
+                    <h3>Testing</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge tech-badge-core">PHPUnit</span>
+                    <span class="tech-badge tech-badge-core">Pest</span>
+                    <span class="tech-badge">Unit Testing</span>
+                    <span class="tech-badge">Automated Testing</span>
+                </div>
+            </div>
+
+            <!-- Laravel Ecosystem -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <i class="fa-brands fa-laravel"></i>
+                    <h3>Laravel Ecosystem</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge">Laravel Queues</span>
+                    <span class="tech-badge">Laravel Excel</span>
+                    <span class="tech-badge">Spatie Permission</span>
+                    <span class="tech-badge">Filament</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Tools</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge">Git</span>
+                    <span class="tech-badge">GitHub</span>
+                    <span class="tech-badge">GitLab</span>
+                    <span class="tech-badge">Postman</span>
+                    <span class="tech-badge">VS Code</span>
+                </div>
+            </div>
+
+            <!-- Additional -->
+            <div class="skills-card skills-card-wide">
+                <div class="skills-card-header">
+                    <i class="fa-solid fa-plus"></i>
+                    <h3>Additional Technologies</h3>
+                </div>
+                <div class="skills-badges">
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Neo4j</span>
+                    <span class="tech-badge">Cypher</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Vtiger CRM</span>
+                    <span class="tech-badge">WordPress</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Engineering Focus Section -->
+    <section class="engineering-focus" id="engineering-focus" aria-labelledby="eng-title">
+        <h2 class="heading" id="eng-title">Engineering <span>Focus</span></h2>
+
+        <div class="focus-grid">
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-sitemap"></i></div>
+                <h3>Backend Architecture</h3>
+                <p>Service Layer, modular backend design, separation of concerns, and maintainable system boundaries.</p>
+            </article>
+
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-plug"></i></div>
+                <h3>API Development</h3>
+                <p>REST APIs, authentication flows, authorization, validation, and robust API workflow design.</p>
+            </article>
+
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-lock"></i></div>
+                <h3>Security</h3>
+                <p>Authentication, authorization, JWT, access control, input validation, and IDOR prevention.</p>
+            </article>
+
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <h3>Performance</h3>
+                <p>Query optimization, database-heavy operations, indexing, and production performance issue resolution.</p>
+            </article>
+
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Code Quality</h3>
+                <p>Clean Code, SOLID principles, design patterns, refactoring, and technical debt reduction.</p>
+            </article>
+
+            <article class="focus-card">
+                <div class="focus-icon"><i class="fa-solid fa-vial"></i></div>
+                <h3>Testing</h3>
+                <p>PHPUnit and Pest for automated testing — unit tests and coverage for business rules.</p>
+            </article>
         </div>
     </section>
     
     <!-- Projects Section -->
-    <!-- <section class="projects" id="projects">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+        <h2 class="heading" id="projects-title">Key <span>Projects</span></h2>
 
-        <div class="portofolio-container">
-            <div class="portofolio-box">
-                <img src="Imgs/SPI_img.jpg" alt="">
-                <div class="portofolio-layer">
-                    <h4>Daem</h4>
-                    <p>Digital content platform, by building modules to extract and process data from Excel sheets, seamlessly integrating it into a PostgreSQL database.</p>
-                    <a href="http://spi_demo.nextecontech.ai/home" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
+        <div class="projects-grid">
 
-            <div class="portofolio-box">
-                <img src="Imgs/FilmSA.jpg" alt="">
-                <div class="portofolio-layer">
-                    <h4>Film SA</h4>
-                    <p>comprehensive web portal to streamline the filmmaking process and promote local film production in Saudi Arabia</p>
-                    <a href="http://sfc.hwadi.com.sa/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <!-- Laam - FEATURED -->
+            <article class="project-card project-featured">
+                <div class="featured-badge" aria-label="Featured Project">
+                    <i class="fa-solid fa-star"></i> FEATURED PROJECT
                 </div>
-            </div>
+                <div class="project-card-header">
+                    <h3>Laam — School Management SaaS</h3>
+                    <p class="project-role">Role: Senior Backend Engineer</p>
+                </div>
+                <p class="project-desc">Production school-management SaaS platform supporting multiple dashboards and mobile applications.</p>
+                <ul class="project-contributions">
+                    <li>REST APIs powering 3 web dashboards + 2 mobile apps.</li>
+                    <li>JWT auth, RBAC, and API security hardening.</li>
+                    <li>Query optimization + legacy refactoring.</li>
+                    <li>PHPUnit &amp; Pest test coverage; queues + data imports.</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge tech-badge-core">Laravel 10</span>
+                    <span class="tech-badge tech-badge-core">PHP</span>
+                    <span class="tech-badge tech-badge-core">MySQL</span>
+                    <span class="tech-badge">JWT</span>
+                    <span class="tech-badge">PHPUnit</span>
+                    <span class="tech-badge">Pest</span>
+                </div>
+                <button class="btn btn-outline project-detail-btn" data-project="laam" aria-expanded="false" aria-controls="project-modal">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <!-- FilmSA -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>FilmSA</h3>
+                    <p class="project-role">Role: Software Engineer</p>
+                </div>
+                <p class="project-desc">Saudi entertainment and content-sector platform for industry professionals.</p>
+                <ul class="project-contributions">
+                    <li>Primary CMS contributor — 60%+ of CMS implementation.</li>
+                    <li>Recommended and built Filament-based CMS.</li>
+                    <li>Dashboard development + authentication.</li>
+                    <li>Service Pattern architecture.</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge tech-badge-core">PHP</span>
+                    <span class="tech-badge tech-badge-core">Laravel</span>
+                    <span class="tech-badge">Filament</span>
+                    <span class="tech-badge">MySQL</span>
+                </div>
+                <button class="btn btn-outline project-detail-btn" data-project="filmsa" aria-expanded="false" aria-controls="project-modal">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <!-- ETOLV -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>ETOLV — Tourism ERP</h3>
+                    <p class="project-role">Role: Backend Developer</p>
+                </div>
+                <p class="project-desc">Production tourism ERP serving 100+ departments and 5,000+ end users.</p>
+                <ul class="project-contributions">
+                    <li>Massar Hajj module built from scratch.</li>
+                    <li>Hajj booking workflow + balance tracking.</li>
+                    <li>Neo4j graph modeling + Cypher queries.</li>
+                    <li>Service Layer + roles &amp; permissions.</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge tech-badge-core">PHP</span>
+                    <span class="tech-badge tech-badge-core">Laravel/Lumen</span>
+                    <span class="tech-badge">Neo4j</span>
+                    <span class="tech-badge">Cypher</span>
+                </div>
+                <button class="btn btn-outline project-detail-btn" data-project="etolv" aria-expanded="false" aria-controls="project-modal">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <!-- DAEM -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>DAEM — Stock Market Platform</h3>
+                    <p class="project-role">Role: Backend Development</p>
+                </div>
+                <p class="project-desc">Saudi stock-market platform integrating market data from multiple sources.</p>
+                <ul class="project-contributions">
+                    <li>Laravel backend + PostgreSQL modeling.</li>
+                    <li>Python/Flask scraping services.</li>
+                    <li>yfinance market data integration.</li>
+                    <li>Financial data processing pipelines.</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge tech-badge-core">Laravel</span>
+                    <span class="tech-badge tech-badge-core">PHP</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                </div>
+                <button class="btn btn-outline project-detail-btn" data-project="daem" aria-expanded="false" aria-controls="project-modal">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
+
+            <!-- ClAVIS BS -->
+            <article class="project-card">
+                <div class="project-card-header">
+                    <h3>ClAVIS BS — CRM Solutions</h3>
+                    <p class="project-role">Role: PHP Developer / Laravel Intern</p>
+                </div>
+                <p class="project-desc">CRM customization and development for social and sports club management.</p>
+                <ul class="project-contributions">
+                    <li>Vtiger CRM customization.</li>
+                    <li>CRM workflows for a large social/sports club.</li>
+                    <li>Laravel/PHP custom development.</li>
+                    <li>WordPress work where required.</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-badge tech-badge-core">PHP</span>
+                    <span class="tech-badge tech-badge-core">Laravel</span>
+                    <span class="tech-badge">Vtiger CRM</span>
+                    <span class="tech-badge">WordPress</span>
+                </div>
+                <button class="btn btn-outline project-detail-btn" data-project="clavis" aria-expanded="false" aria-controls="project-modal">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </article>
 
         </div>
-    </section> -->
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-content" role="document">
+            <button class="modal-close" id="modal-close" aria-label="Close project details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-body">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="heading" id="contact-title">Let's Build Something <span>Reliable</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+        <div class="contact-content">
+            <p class="contact-lead">
+                I'm open to Senior Backend Engineer opportunities focused on PHP, Laravel, APIs, and backend systems.
+            </p>
+
+            <div class="contact-buttons">
+                <a href="mailto:MahmoudNagah999@gmail.com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/mahmoud-nagah-mn999/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="https://github.com/MahmoudNagah999" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="myCV/Mahmoud%20Nagah%20Cv.pdf" class="btn btn-cv" download="Mahmoud_Nagah_CV.pdf">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">   
-                <input type="text" placeholder="Email Subject">
+
+            <div class="contact-links">
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:MahmoudNagah999@gmail.com">MahmoudNagah999@gmail.com</a></p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/mahmoud-nagah-mn999/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mahmoud-nagah-mn999</a></p>
+                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/MahmoudNagah999" target="_blank" rel="noopener noreferrer">github.com/MahmoudNagah999</a></p>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+        </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-text">
-            <p>Copyright &copy; 2026 by Mahmoud Nagah | All Rights Reserved.</p>
+            <p>&copy; 2026 Mahmoud Nagah. Senior Backend Engineer — PHP / Laravel / REST APIs / MySQL.</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"><i class="fa-solid fa-angles-up"></i></i></a>
+            <a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
     
     <!-- Scroll Reveal Js -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- Typed Js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- Main Js -->
     <script src="Js/main.js"></script>
