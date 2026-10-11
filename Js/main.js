@@ -152,7 +152,8 @@
             overview:
                 'Saudi entertainment and content-sector platform for industry professionals.',
             highlights: [
-                'Primary CMS contributor — 60%+ of CMS implementation.',
+                'Primarily responsible for CMS development.',
+                'Contributed significantly to the CMS implementation.',
                 'Recommended and used Filament for CRUD-oriented CMS functionality.',
                 'Contributed to the main dashboard.',
                 'Worked with Laravel, Service Pattern and authentication.'
@@ -238,10 +239,12 @@
         },
         clavis: {
             title: 'ClAVIS BS — CRM Solutions',
-            role: 'PHP Developer / Laravel Intern',
+            role: 'PHP Developer (promoted from Laravel Intern).',
             overview:
                 'CRM customization and development for social and sports club management.',
             highlights: [
+                'Laravel Intern: Jan 2021 — Mar 2021.',
+                'PHP Developer: Mar 2021 — Nov 2021.',
                 'PHP/Laravel development.',
                 'Vtiger CRM customization.',
                 'CRM workflows for a large social/sports club.',
@@ -259,7 +262,7 @@
                 'Developed Laravel modules and custom backend features.',
                 'Configured CRM workflows and data structures.',
                 'Handled WordPress tasks when required on adjacent projects.',
-                'Progressed from Laravel Intern to PHP Developer within 3 months.'
+                'Promoted from Laravel Intern to PHP Developer after the internship period.'
             ]
         }
     };
